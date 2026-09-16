@@ -1,0 +1,214 @@
+._biosPagina {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 96px;
+}
+
+._biosHeader {
+  margin-bottom: 48px;
+}
+
+._biosHeader h1 {
+  margin: 8px 0;
+  font-size: clamp(36px, 6vw, 64px);
+}
+
+._biosBioscoopNaam {
+  color: #e4b04a;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+._biosSectie {
+  margin-top: 48px;
+}
+
+._biosFilmLijst,
+._biosVoorstellingenLijst {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+._biosFilmKaart,
+._biosVoorstelling {
+  padding: 24px;
+  border: 1px solid #303440;
+  border-radius: 12px;
+  background: #1b1e27;
+  color: #f5f5f5;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 150ms, transform 150ms;
+}
+
+._biosFilmKaart:hover,
+._biosVoorstelling:hover {
+  border-color: #e4b04a;
+  transform: translateY(-3px);
+}
+
+._biosFilmKaart:focus-visible,
+._biosVoorstelling:focus-visible,
+._biosBerekenKnop:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #e4b04a;
+  outline-offset: 3px;
+}
+
+._biosGeselecteerd {
+  border-color: #e4b04a;
+  outline: 2px solid #e4b04a;
+}
+
+._biosFilmKaart h3 {
+  margin-top: 0;
+  color: #e4b04a;
+}
+
+._biosFilmWaarschuwing {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-left: 4px solid #e4b04a;
+  border-radius: 6px;
+  background: #29251c;
+  color: #f6d994;
+}
+
+._biosFormulier {
+  display: grid;
+  gap: 24px;
+  padding: 28px;
+  border: 1px solid #303440;
+  border-radius: 12px;
+  background: #1b1e27;
+}
+
+._biosFormulier fieldset {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #3b404e;
+  border-radius: 8px;
+}
+
+._biosFormulier legend {
+  padding: 0 8px;
+  color: #e4b04a;
+  font-weight: bold;
+}
+
+._biosFormulierGroep {
+  display: grid;
+  gap: 8px;
+}
+
+._biosFormulierGroep label {
+  font-weight: bold;
+}
+
+._biosFormulierGroep small {
+  color: #adb2bf;
+}
+
+._biosFormulier input,
+._biosFormulier select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444957;
+  border-radius: 6px;
+  background: #101219;
+  color: #f5f5f5;
+}
+
+._biosCategorieLijst {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+._biosSnackVelden {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+._biosFoutmelding {
+  margin: 0;
+  padding: 14px;
+  border: 1px solid #d25454;
+  border-radius: 6px;
+  background: #3b1919;
+  color: #ffb8b8;
+}
+
+._biosBerekenKnop {
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #e4b04a;
+  color: #11131a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+._biosBerekenKnop:hover {
+  background: #f1c467;
+}
+
+._biosBesteloverzicht {
+  margin-top: 48px;
+  padding: 28px;
+  border: 1px solid #e4b04a;
+  border-radius: 12px;
+  background: #171920;
+}
+
+._biosBesteloverzicht > h2 {
+  margin-top: 0;
+  color: #e4b04a;
+}
+
+._biosOverzichtBlok {
+  padding: 16px 0;
+  border-bottom: 1px solid #303440;
+}
+
+._biosOverzichtBlok h3 {
+  margin-top: 0;
+}
+
+._biosOverzichtBlok p {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+._biosTotaal {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 24px;
+  font-size: 24px;
+}
+
+._biosTotaal strong {
+  color: #e4b04a;
+}
+
+@media (max-width: 600px) {
+  ._biosPagina {
+    padding-top: 24px;
+  }
+
+  ._biosSnackVelden {
+    grid-template-columns: 1fr;
+  }
+
+  ._biosOverzichtBlok p {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "bioscoop": {
+    "naam": "Cinema Nova",
+    "valuta": "EUR"
+  },
+  "zalen": [
+    {
+      "id": 1,
+      "naam": "Zaal 1",
+      "capaciteit": 35
+    },
+    {
+      "id": 2,
+      "naam": "Zaal 2",
+      "capaciteit": 65
+    },
+    {
+      "id": 3,
+      "naam": "Zaal 3",
+      "capaciteit": 45
+    }
+  ],
+  "films": [
+    {
+      "id": 1,
+      "titel": "De Laatste Ster",
+      "duur_minuten": 118,
+      "minimumleeftijd": 12
+    },
+    {
+      "id": 2,
+      "titel": "Avontuur in het Bos",
+      "duur_minuten": 94,
+      "minimumleeftijd": 6
+    },
+    {
+      "id": 3,
+      "titel": "Code Rood",
+      "duur_minuten": 132,
+      "minimumleeftijd": 16
+    }
+  ],
+  "voorstellingen": [
+    {
+      "id": 1,
+      "film_id": 1,
+      "zaal_id": 2,
+      "datum": "2026-10-15",
+      "aanvangstijd": "16:00"
+    },
+    {
+      "id": 2,
+      "film_id": 1,
+      "zaal_id": 1,
+      "datum": "2026-10-15",
+      "aanvangstijd": "20:00"
+    },
+    {
+      "id": 3,
+      "film_id": 2,
+      "zaal_id": 3,
+      "datum": "2026-10-15",
+      "aanvangstijd": "14:30"
+    },
+    {
+      "id": 4,
+      "film_id": 2,
+      "zaal_id": 2,
+      "datum": "2026-10-15",
+      "aanvangstijd": "18:00"
+    },
+    {
+      "id": 5,
+      "film_id": 3,
+      "zaal_id": 3,
+      "datum": "2026-10-15",
+      "aanvangstijd": "21:15"
+    },
+    {
+      "id": 6,
+      "film_id": 3,
+      "zaal_id": 1,
+      "datum": "2026-10-16",
+      "aanvangstijd": "19:30"
+    }
+  ],
+  "prijzen": {
+    "kaartjes": {
+      "kind": 6.0,
+      "jongere": 8.0,
+      "volwassene": 11.0,
+      "senior": 7.5
+    },
+    "snacks": {
+      "popcorn": 4.0,
+      "frisdrank": 3.0
+    },
+    "avondtoeslag_per_bezoeker": 1.5,
+    "avondtoeslag_na": "18:00",
+    "groepskorting_vanaf_bezoekers": 5,
+    "groepskorting_percentage": 10
+  },
+  "instellingen": {
+    "maximum_bezoekers_per_reservering": 10
+  },
+  "reserveringen": []
+}
